@@ -1,0 +1,13 @@
+I've already practiced Linux commands in Tryhackme and HTB and will do this project on Ubuntu virtual machine from VirtualBox. 
+
+Resources Used:
+-https://www.virtualbox.org/wiki/Downloads
+-https://ubuntu.com/#download
+-https://tryhackme.com/room/linuxfundamentalspart1
+-https://tryhackme.com/room/linuxfundamentalspart2
+-https://tryhackme.com/room/linuxfundamentalspart3
+
+Environments Used:
+-Ubuntu in Virtualbox
+
+Started Ubuntu virtual machine and open a terminal.
