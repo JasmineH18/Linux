@@ -69,6 +69,27 @@ Example: grep "3.18.18.132" access.log
 Output: It'll search the entire contents of this file for any entries containing 3.18.18.132
 Screenshot: https://imgur.com/qEvicyz
 
+Shell Operators
+
+&: This operator allows you to run commands in the background of your terminal.
+Example: cp applejuice.txt Documents & > cd Documents > ls
+Output: [1] 4010 > [1]+ Done > applejuice.txt DC.txt Marvel.txt Thanos
+Screenshot: https://imgur.com/Jw0Y8ew
+
+&&:This operator allows you to combine multiple commands together in one line of your terminal.
+Example: cd Documents && cat DC.txt
+Output: Wonder Woman Superman Batman
+Screenshot: https://imgur.com/7LdANqr
+
+>: This operator is a redirector - meaning that we can take the output from a command and direct it elsewhere.
+Example: 'echo sunny day > weather' > 'cat weather' > 'ls'
+Output: sunny day
+Screenshot: https://imgur.com/MK0nmyK
+
+>>: This operator does the same function of the > operator but appends the output rather than replacing (meaning nothing is overwritten).
+Example: 'echo rainy day >> weather' > 'cat weather' 
+Output: sunny day rainy day
+Screenshot: https://imgur.com/fpDTiSe
 
 
 
