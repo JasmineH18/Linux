@@ -90,6 +90,23 @@ x: Execute
 7 111 rwx Read, Write, and Execute
 
 
+su: Switching between users. When using 'su' to switch to "root", our new session drops us into our previous user's home directory. 
+Example: su root > enter password 
+Output: root@Ubuntu:/home/queen#
+Screenshots: https://imgur.com/eV8Y1Rc
+
+-l: Short for --login. When using 'su -l', our new session has dropped us into the home directory of "root" automatically. 
+Example: su -l root > enter password > pwd 
+Output: /root
+Screenshots: https://imgur.com/ogsLWYy
+
+
+Common Directories
+
+
+
+
+
 
 
 
