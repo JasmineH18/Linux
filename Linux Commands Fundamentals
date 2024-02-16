@@ -22,6 +22,7 @@ Example: whoami
 Output: queen
 Screenshot: https://imgur.com/3UcZtqn
 
+
 Interacting With the Filesystem
 
 ls: Listing files in our current directory
@@ -47,6 +48,7 @@ pwd: Print working directory, find out the full path to our current working dire
 Example: pwd
 Output: /home/queen/Documents
 Screenshot: https://imgur.com/y1SemBs
+
 
 Searching for Files
 
