@@ -49,17 +49,17 @@ Screenshot: https://imgur.com/9PkwsTH
 mv: Short for move. Move a file or folder. Rather than copying and/or creating a new file, mv will merge or modify the second file that we provide as an argument. Not only can you use mv to move a file to a new folder, but you can also use mvto rename a file or folder.
 Example: mv Earth Planets > ls > cat Planets
 Output: All types of animals live here!
-Screenshots: https://imgur.com/kg1pcgJ
+Screenshot: https://imgur.com/kg1pcgJ
 
 rm: Short for remove. Remove a file or folder
 Example: ls > rm weather > ls
 Output: It'll remove the 'weather' file
-Screenshots: https://imgur.com/823ip81
+Screenshot: https://imgur.com/823ip81
 
 file: Determine the type of a file
 Example: cd Documents > ls > file Marvel.txt 
 Output: Marvel.txt: ASCII text
-Screenshots: https://imgur.com/PIw26p0
+Screenshot: https://imgur.com/PIw26p0
 
 
 Permissions 101
@@ -67,7 +67,7 @@ Permissions 101
 -lh: Use 'ls -lh' to list the permissions of all files in the directory.
 Example: ls -lh
 Output: It'll list the permissions of the files
-Screenshots: https://imgur.com/qzHoJZc
+Screenshot: https://imgur.com/qzHoJZc
 
 These three columns determines what user or group have access that can perform a certain task on a file or folder.  
 
@@ -93,18 +93,34 @@ x: Execute
 su: Switching between users. When using 'su' to switch to "root", our new session drops us into our previous user's home directory. 
 Example: su root > enter password 
 Output: root@Ubuntu:/home/queen#
-Screenshots: https://imgur.com/eV8Y1Rc
+Screenshot: https://imgur.com/eV8Y1Rc
 
 -l: Short for --login. When using 'su -l', our new session has dropped us into the home directory of "root" automatically. 
 Example: su -l root > enter password > pwd 
 Output: /root
-Screenshots: https://imgur.com/ogsLWYy
+Screenshot: https://imgur.com/ogsLWYy
 
 
 Common Directories
 
+/etc: Short for etcetera. This root directory is one of the most important root directories on your system. The etc folder is a commonplace location to store system files that are used by your operating system. 
+Example: cd / > pwd > cd /etc > ls
+Output: shadow passwd sudoers
+Screenshot: https://imgur.com/Y65kZMV
 
+/var: Short for variable data. This folder stores data that is frequently accessed or written by services or applications running on the system.
+Example: cd /var > ls 
+Output: backups log tmp
+Screenshot: https://imgur.com/BsSEyxW
 
+/root: the home for the "root" system user
+Example: cd / > pwd > ls 
+Output: lib sbin dev
+Screenshot: https://imgur.com/XQJqQ9c
+
+/tmp: Short for temporary. the /tmp directory is volatile and is used to store data that is only needed to be accessed once or twice. 
+Example: cd /tmp > ls 
+Screenshot: https://imgur.com/8ZEWpJQ
 
 
 
