@@ -10,4 +10,73 @@ Resources Used:
 Environments Used:
 -Ubuntu in Virtualbox
 
-Started Ubuntu virtual machine and open a terminal.
+Started Ubuntu virtual machine and open a terminal. https://imgur.com/W8j1q1I
+
+echo: Output any text that we provide
+Example: echo Hello World!
+Output: Hello World!
+Screenshot: https://imgur.com/MwxA6o5
+
+whoami: Find out what user we're currently logged in as
+Example: whoami
+Output: queen
+Screenshot: https://imgur.com/3UcZtqn
+
+Interacting With the Filesystem
+
+ls: Listing files in our current directory
+Example: ls
+Output: Desktop Documents Downloads 
+Screenshot: https://imgur.com/rZ2zH5a
+
+Tip: You can list the contents of a directory without having to navigate to it by using 'ls' and the name of the directory. I.e. ls Documents https://imgur.com/lQcTFrO
+
+cd: Change directory
+Example: cd Documents
+Output: queen@Ubuntu:~/Documents$
+Screenshot: https://imgur.com/g1QMpBl
+
+cat: Concatenate, outputting the contents of a file
+Example: cd Documents > ls > cat Hawkeye.txt
+Output: You found me!
+Screenshot: https://imgur.com/90pLSRq
+
+Tip: You can use 'cat' to output the contents of a file within directories without having to navigate to it by using 'cat' and the name of the directory. I.e. cat /home/queen/Documents/Hawkeye.txt https://imgur.com/aSYnxNI
+
+pwd: Print working directory, find out the full path to our current working directory
+Example: pwd
+Output: /home/queen/Documents
+Screenshot: https://imgur.com/y1SemBs
+
+Searching for Files
+
+find: Instead of using 'ls' and 'cd', we can use 'find' to automate things for us.
+Example 1: find -name Marvel.txt
+Output: ./Documents/Marvel.txt
+Screenshot: https://imgur.com/QZWpGjo
+
+Tip: If you don't remember the file name and 'find' can search file extension. I.e. find -name *.txt
+
+Used THM VM
+wc: Use "wc" to count the number of entries
+Example: wc -l access.log
+Output: 302
+Screenshot: https://imgur.com/WsD1g9H
+
+Used THM VM
+grep: Allows us to search the contents of files for specific values that we are looking for.
+Example: grep "3.18.18.132" access.log
+Output: It'll search the entire contents of this file for any entries containing 3.18.18.132
+Screenshot: https://imgur.com/qEvicyz
+
+
+
+
+
+
+
+
+
+
+
+
