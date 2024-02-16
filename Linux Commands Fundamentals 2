@@ -62,12 +62,32 @@ Output: Marvel.txt: ASCII text
 Screenshots: https://imgur.com/PIw26p0
 
 
-Permission 101
+Permissions 101
 
+-lh: Use 'ls -lh' to list the permissions of all files in the directory.
+Example: ls -lh
+Output: It'll list the permissions of the files
+Screenshots: https://imgur.com/qzHoJZc
 
+These three columns determines what user or group have access that can perform a certain task on a file or folder.  
 
+d: Type
+r: Read
+w: Write
+x: Execute 
 
+- Users Groups Others
+- --- --- ---
+-rw-rw-r-- (Users: Can only Read and Write, Groups: Can only Read and Write, Others: Can only Read) 
 
+0 000 --- No permissions
+1 001 --x Only Execute
+2 010 -w- Only Write
+3 011 -wx Write and Excute
+4 100 r-- Only Read
+5 101 r-x Read and Execute
+6 110 rw- Read and Write
+7 111 rwx Read, Write, and Execute
 
 
 
