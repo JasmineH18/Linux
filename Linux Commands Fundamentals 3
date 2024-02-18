@@ -3,9 +3,56 @@ I've already practiced Linux commands in Tryhackme and HTB and will do this proj
 Resources Used:
 -https://www.virtualbox.org/wiki/Downloads
 -https://ubuntu.com/#download
+-https://tryhackme.com/room/linuxfundamentalspart1
+-https://tryhackme.com/room/linuxfundamentalspart2
 -https://tryhackme.com/room/linuxfundamentalspart3
 
 Environments Used:
 -Ubuntu in Virtualbox
 
 Started Ubuntu virtual machine and open a terminal. https://imgur.com/W8j1q1I
+
+Terminal Text Editors
+
+Nano editor make it easier to create and edit files instead of using 'echo' and operators '>' and '>>'.
+
+Nano text editor commands
+CTRL + G: Display help text
+CTRL + O: Offer to write file ("Save as")
+CTRL + K: Cut current line into cutbuffer
+CTRL + T: Execute a function or an external command
+CTRL + C: Display the position of the cursor 
+CTRL + X: Close the current buffer, exit from nano
+CTRL + R: Insert a file into current buffer, or into new buffer
+CTRL + \: Replace a string or a regular expression
+CTRL + U: Paste contents of cutbuffer
+CTRL + J: Justify the current paragraph 
+CTRL + /: Go to line and column number
+
+Nano
+Example: nano HarryPotter > Typed 'Daniel Radcliffe played the character Harry Potter.' > CTRL + O to save > Pressed Enter > CTRL + X to exit >  cat HarryPotter
+
+Output: Daniel Radcliffe played the character Harry Potter.
+Screenshot: https://imgur.com/HyKe7lB, https://imgur.com/3OsyRaF, https://imgur.com/2eD09v5
+
+VIM is an advanced text editor. 
+Customisable: You can modify the keyboard shortcuts to be of your choosing.
+Syntax Highlighting: This is useful if you are writing or maintaining code.
+VIM works on all terminals.
+
+
+General/Useful Utilities
+
+wget: Allows us to download files from the web. You can download script, picture, program, etc.
+Example: wget https://www.nano-editor.org/dist/latest/nano.html > ls
+Output: nano.html
+Screenshot: https://imgur.com/wsi8IO9
+
+
+
+
+
+
+
+
+
