@@ -48,10 +48,37 @@ Example: wget https://www.nano-editor.org/dist/latest/nano.html > ls
 Output: nano.html
 Screenshot: https://imgur.com/wsi8IO9
 
+scp: Short for secure copy. This command lets you securely copying files. Allows you to transfer files between two computers using the SSH protocol to provide both authentication and encryption. Copy files/directories from your current system to a remote system or 
+copy files/directories from a remote system to your current system 
+Example: scp apples.txt queen@XXX.XXX.X.XX:/home/queen/Apples2.txt
+Output: It should show the renamed file Apples2.txt to the location you provided
+
+http.server: Python3 provides a module called 'HTTPServer'. This module turns your computer into a web server that you can use to serve your own files, where they can then be downloaded by another computing using commands such as 'curl' and 'wget'. 
+Example: python3 -m http.server > Opened new tab: wget http://XXX.X.X.XX:8000/apples.txt
+
+Output: Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/)
+XX.X.X.XX - - [22/Feb/2024 18:24:37] "Get /apples.txt HTTP/1.1" 200 -
+
+Connecting to XXX.X.X.XX:8000... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 22 [text/plain]
+Saving to: 'apples.txt.1'
+
+Screenshot: https://imgur.com/PmRUrx7, https://imgur.com/pBxKuSJ, https://imgur.com/3S9umMg, https://imgur.com/J7aYpbP
 
 
+Processes 101
 
+Processes are the programs that are running on your machine. They are managed by the kernel, where each process will have an ID associated with it, also known as its PID. The PID increments for the order In which the process starts. I.e. the 60th process will have a PID of 60.
 
+ps: This command will show the list of running processes
+Screenshot: https://imgur.com/diUfz78
+
+ps aux: This command will let you see the processes run by other users and those that don't run from a session.
+Screenshot: https://imgur.com/OzAor2N
+
+top: This command will give you real-time statistics about the processes running on your system instead of a one-time view. These statistics will refresh every 10 seconds, but will also refresh when you use the arrow keys to browse the various rows.
+Screenshot: https://imgur.com/rq8Na50
 
 
 
