@@ -71,6 +71,8 @@ Processes 101
 
 Processes are the programs that are running on your machine. They are managed by the kernel, where each process will have an ID associated with it, also known as its PID. The PID increments for the order In which the process starts. I.e. the 60th process will have a PID of 60.
 
+Viewing Processes
+
 ps: This command will show the list of running processes
 Screenshot: https://imgur.com/diUfz78
 
@@ -79,6 +81,65 @@ Screenshot: https://imgur.com/OzAor2N
 
 top: This command will give you real-time statistics about the processes running on your system instead of a one-time view. These statistics will refresh every 10 seconds, but will also refresh when you use the arrow keys to browse the various rows.
 Screenshot: https://imgur.com/rq8Na50
+
+Managing Processes
+
+kill: You can kill a command usig 'kill' and the associated PID that we wish to kill.
+
+Below are some of the signals that we can send to a process when it is killed:
+SIGTERM - Kill the process, but allow it to do some cleanup tasks beforehand
+SIGKILL - Kill the process - doesn't do any cleanup after the fact
+SIGSTOP - Stop/suspend a process
+ 
+Example 1: kill 1709
+Example 2: sigterm 1709
+Example 3: sigkill 1709
+Example 4: sigstop 1709
+
+Getting Processes/Services to Start on Boot
+
+systemctl: This command allows us to interact with the systemd process/daemon.
+
+There are four options you can use with systemctl:
+Start
+Stop
+Enable
+Disable
+
+Example 1: systemctl start apache2
+Example 2: systemctl stop apache2
+Example 3: systemctl enable apache2
+Example 4: systemctl disable apache2
+
+An Introduction to Backgrounding and Foregrounding in Linux
+
+Processes can run in two states: In the background and in the foreground. 
+
+Foreground Example: echo "Hello World"
+Output: Hello World
+
+Background Example: echo "Hello World" &
+Output: [1] 3571
+Hello World
+
+Screenshot: https://imgur.com/zZZmzzc, https://imgur.com/74eeoMP
+
+Foregrounding a process
+
+fg: This command can be used to bring the background process back into use on the terminal.
+Example: root@Ubuntu:/$ /var/opt# fg
+
+
+Maintaining Your System: Automation
+
+
+
+
+
+
+
+
+
 
 
 
