@@ -198,11 +198,14 @@ Step 1: Install the GPG key: wget -qO - https://download.sublimetext.com/sublime
 Step 2: Select the channel to use: echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
 
 Step 3: Update apt sources and install Sublime Text: 
-sudo apt-get update
-sudo apt-get install sublime-text
+Update apt sources: sudo apt-get update
+install Sublime Text: sudo apt-get install sublime-text
 
 Tip: If this fails ensure apt is set up to work with https sources: sudo apt-get install apt-transport-https
 
-Screenshots:  
+'cd /' > 'ls /etc/apt/sources.list.d'
+Output: sublime-text.list
+
+Screenshots: https://imgur.com/7TwpLgq, https://imgur.com/xOGpgUv, https://imgur.com/o9Eoia0, https://imgur.com/eFFMV3m, https://imgur.com/oAsNu1I
 
 
