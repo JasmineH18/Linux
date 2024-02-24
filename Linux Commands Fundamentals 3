@@ -209,3 +209,8 @@ Output: sublime-text.list
 Screenshots: https://imgur.com/7TwpLgq, https://imgur.com/xOGpgUv, https://imgur.com/o9Eoia0, https://imgur.com/eFFMV3m, https://imgur.com/oAsNu1I
 
 
+Maintaining Your System: Logs
+
+/var/log directory: These files and folders contain logging information for applications and services running on your system. The Operating System 
+
+
