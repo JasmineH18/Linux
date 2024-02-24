@@ -130,6 +130,44 @@ Example: root@Ubuntu:/$ /var/opt# fg
 
 Maintaining Your System: Automation
 
+cron: The system's main scheduler for running jobs or tasks unattended.
+crontab: Allows the user to submit, edit or delete entries to cron. A crontab file is a user file that holds the scheduling information.
+
+Crontabs require 6 specific values:
+MIN:	What minute to execute at. It ranges from 0 to 59.
+HOUR:	What hour to execute at. It spans from 0 to 23.
+DOM:	What day of the month to execute at. It ranges from 1 to 31.
+MON:	What month of the year to execute at. It varies from 1 to 12.
+DOW:	What day of the week to execute at. It is represented by numbers from 0 to 6, where both 0 and 6 correspond to Sunday.
+CMD:	The actual command that will be executed. 
+
+Crontab is located in /root/etc/crontab. This will display your crontabs and description of the crontab. 
+In the terminal: 'cd /' > 'cat /etc/crontab'
+Screenshot: https://imgur.com/Qcj3b4y
+
+crontab -l: List all the cron jobs of the user we're logged in with.
+Screenshot: https://imgur.com/Sz5ihSl
+
+crontab -e: This command allows you to create a cron job and see current/previous jobs. I select the Nano editor.
+Screenshot: https://imgur.com/Dl1hwco, https://imgur.com/NUYVHQE
+
+Example: 51 22 * * * echo "Testing a cool feature" > /home/queen/testing.txt
+CTRL + O > Presses Enter > CTRL + X > crontab -l > ls > cat testing.txt
+Output: Testing a cool feature
+Screenshots: https://imgur.com/ns6j4iY, https://imgur.com/rX6bJVT, https://imgur.com/s3zCTH0
+
+create/edit cron as a different user. Selected Nano editor.
+sudo crontab -u queen -e
+
+View different user cron jobs.
+sudo crontab -u queen -l
+
+Tip: You can have a cron job run hourly, daily, weekly, and monthly. '>>' means you can add it to the bottom line of an existing cron job.
+
+Example 1: @hourly echo "This is a test" >> /home/queen/testing.txt
+Example 2: @daily echo "This is a test" > /home/queen/testing.txt
+Example 3: @weekly echo "This is a test" >> /home/queen/testing.txt
+Example 4: @monthly echo "This is a test" > /home/queen/testing.txt
 
 
 
