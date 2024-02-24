@@ -211,6 +211,17 @@ Screenshots: https://imgur.com/7TwpLgq, https://imgur.com/xOGpgUv, https://imgur
 
 Maintaining Your System: Logs
 
-/var/log directory: These files and folders contain logging information for applications and services running on your system. The Operating System 
+/var/log directory: These files and folders contain logging information for applications and services running on your system. The Operating System (OS) automatically managed these logs in a process that is known as "rotating". 
+
+Example: 
+apache2: An Apache2 web server
+fail2ban: Logs for the fail2ban service, which is used to monitor attempted brute forces
+ufw: The UFW service which is used as a firewall
+
+You can monitor the health of your system and protect it. This allows developers or administrators to diagnose performance issues or investigate an intruder's activity.
+
+Example 2: 
+apache2 web server contain information for every single request. Two types of log files are access.log and error.log
+
 
 
