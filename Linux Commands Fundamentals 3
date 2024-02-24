@@ -4,6 +4,7 @@ Resources Used:
 -https://www.virtualbox.org/wiki/Downloads
 -https://ubuntu.com/#download
 -https://tryhackme.com/room/linuxfundamentalspart3
+-https://ubuntu.com/server/docs/how-to
 
 Environments Used:
 -Ubuntu in Virtualbox
@@ -170,8 +171,22 @@ Example 3: @weekly echo "This is a test" >> /home/queen/testing.txt
 Example 4: @monthly echo "This is a test" > /home/queen/testing.txt
 
 
+Maintaining Your System: Package Management
 
+When developers wish to submit software to the community, they will submit it to an  "apt" repository. If approved, their programs and tools will be released 
 
+In the terminal:
+'cd /' > 'ls /etc/apt'
+Output: apt.conf.d keyrings sources.list
+Screenshot: https://imgur.com/pMa6VFt
+
+Managing Your Repositories (Adding and Removing)
+
+apt: Short for Advanced Packaging Tool. The commands contained within 'apt' provide the means for installing new software packages, upgrading existing software packages, updating the package list index, and even upgrading the entire Ubuntu system.
+
+add-apt-repository: This command allows you to add additional repositories or by listing another provider.
+
+dpkg: Short for Debian package. This commands allows you to install, remove, and build packages, but unlike other package management systems, it cannot automatically download and install packages – or their dependencies.
 
 
 
