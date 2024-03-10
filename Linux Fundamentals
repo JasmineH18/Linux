@@ -55,7 +55,7 @@ Example 1: find -name Marvel.txt
 Output: ./Documents/Marvel.txt
 Screenshot: https://imgur.com/QZWpGjo
 
-Tip: If you don't remember the file name and 'find' can search file extension. I.e. find -name *.txt
+Tip: If you don't remember the file name and 'find' can search file extension. I.e. find *.txt
 
 Used THM VM
 wc: Use "wc" to count the number of entries
