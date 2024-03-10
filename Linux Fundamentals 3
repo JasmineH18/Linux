@@ -30,8 +30,14 @@ CTRL + U: Paste contents of cutbuffer
 CTRL + J: Justify the current paragraph 
 CTRL + /: Go to line and column number
 
-Nano
-Example: nano HarryPotter > Typed 'Daniel Radcliffe played the character Harry Potter.' > CTRL + O to save > Pressed Enter > CTRL + X to exit >  cat HarryPotter
+Nano Example
+In the terminal: 
+nano HarryPotter 
+Typed 'Daniel Radcliffe played the character Harry Potter.' 
+CTRL + O to save 
+Pressed Enter 
+CTRL + X to exit 
+cat HarryPotter
 
 Output: Daniel Radcliffe played the character Harry Potter.
 Screenshot: https://imgur.com/HyKe7lB, https://imgur.com/3OsyRaF, https://imgur.com/2eD09v5
@@ -45,7 +51,9 @@ VIM works on all terminals.
 General/Useful Utilities
 
 wget: Allows us to download files from the web. You can download script, picture, program, etc.
-Example: wget https://www.nano-editor.org/dist/latest/nano.html > ls
+In the terminal: 
+wget https://www.nano-editor.org/dist/latest/nano.html > ls
+
 Output: nano.html
 Screenshot: https://imgur.com/wsi8IO9
 
@@ -55,7 +63,10 @@ Example: scp apples.txt queen@XXX.XXX.X.XX:/home/queen/Apples2.txt
 Output: It should show the renamed file Apples2.txt to the location you provided
 
 http.server: Python3 provides a module called 'HTTPServer'. This module turns your computer into a web server that you can use to serve your own files, where they can then be downloaded by another computing using commands such as 'curl' and 'wget'. 
-Example: python3 -m http.server > Opened new tab: wget http://XXX.X.X.XX:8000/apples.txt
+
+In the terminal: 
+python3 -m http.server 
+Opened new tab: wget http://XXX.X.X.XX:8000/apples.txt
 
 Output: Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/)
 XX.X.X.XX - - [22/Feb/2024 18:24:37] "Get /apples.txt HTTP/1.1" 200 -
@@ -116,10 +127,16 @@ An Introduction to Backgrounding and Foregrounding in Linux
 
 Processes can run in two states: In the background and in the foreground. 
 
-Foreground Example: echo "Hello World"
+Foreground Example
+In the terminal:
+echo "Hello World"
+
 Output: Hello World
 
-Background Example: echo "Hello World" &
+Background Example
+In the terminal
+echo "Hello World" &
+
 Output: [1] 3571
 Hello World
 
@@ -145,7 +162,10 @@ DOW:	What day of the week to execute at. It is represented by numbers from 0 to 
 CMD:	The actual command that will be executed. 
 
 Crontab is located in /root/etc/crontab. This will display your crontabs and description of the crontab. 
-In the terminal: 'cd /' > 'cat /etc/crontab'
+In the terminal: 
+cd /
+cat /etc/crontab
+
 Screenshot: https://imgur.com/Qcj3b4y
 
 crontab -l: List all the cron jobs of the user we're logged in with.
@@ -154,8 +174,16 @@ Screenshot: https://imgur.com/Sz5ihSl
 crontab -e: This command allows you to create a cron job and see current/previous jobs. I select the Nano editor.
 Screenshot: https://imgur.com/Dl1hwco, https://imgur.com/NUYVHQE
 
-Example: 51 22 * * * echo "Testing a cool feature" > /home/queen/testing.txt
-CTRL + O > Presses Enter > CTRL + X > crontab -l > ls > cat testing.txt
+Example
+In the terminal: 
+51 22 * * * echo "Testing a cool feature" > /home/queen/testing.txt
+CTRL + O 
+Presses Enter 
+CTRL + X 
+crontab -l 
+ls 
+cat testing.txt
+
 Output: Testing a cool feature
 Screenshots: https://imgur.com/ns6j4iY, https://imgur.com/rX6bJVT, https://imgur.com/s3zCTH0
 
@@ -178,7 +206,9 @@ Maintaining Your System: Package Management
 When developers wish to submit software to the community, they will submit it to an  "apt" repository. If approved, their programs and tools will be released 
 
 In the terminal:
-'cd /' > 'ls /etc/apt'
+cd /
+ls /etc/apt
+
 Output: apt.conf.d keyrings sources.list
 Screenshot: https://imgur.com/pMa6VFt
 
@@ -203,7 +233,10 @@ install Sublime Text: sudo apt-get install sublime-text
 
 Tip: If this fails ensure apt is set up to work with https sources: sudo apt-get install apt-transport-https
 
-'cd /' > 'ls /etc/apt/sources.list.d'
+In the terminal:
+cd /
+ls /etc/apt/sources.list.d
+
 Output: sublime-text.list
 
 Screenshots: https://imgur.com/7TwpLgq, https://imgur.com/xOGpgUv, https://imgur.com/o9Eoia0, https://imgur.com/eFFMV3m, https://imgur.com/oAsNu1I
