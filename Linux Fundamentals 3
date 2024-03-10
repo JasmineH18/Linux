@@ -52,7 +52,8 @@ General/Useful Utilities
 
 wget: Allows us to download files from the web. You can download script, picture, program, etc.
 In the terminal: 
-wget https://www.nano-editor.org/dist/latest/nano.html > ls
+wget https://www.nano-editor.org/dist/latest/nano.html 
+ls
 
 Output: nano.html
 Screenshot: https://imgur.com/wsi8IO9
