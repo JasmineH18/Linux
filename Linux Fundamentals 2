@@ -69,7 +69,7 @@ cat Planets
 Output: All types of animals live here!
 Screenshot: https://imgur.com/kg1pcgJ
 
-rm: Short for remove. Remove a file or folder
+rm: Short for remove. Remove a file or folder. Tip: To remove folder/directory, run rm -r Google.
 In the terminal: 
 ls 
 rm weather 
